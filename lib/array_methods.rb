@@ -22,5 +22,13 @@ end
 
 
 def find_min_value(array)
-  # Add your solution here
+  i = 0
+  current_min = 9999999999999999999999 
+  while array[i] do
+    if array[i] < current_max
+      current_min = array[i]   
+    end
+    i += 1
+  end
+  current_min
 end
